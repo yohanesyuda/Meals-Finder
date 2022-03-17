@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary: #FFC288;
+    --accent-1: #FEA82F;
+    --accent-2: #FF6701;
+    --small-font: #898C9A;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #FAFAFA;
+}
+
+.banner-area {
+    width: 100%;
+    height: 300px;
+    background-image: url("./bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-area h2 {
+    padding-top: 10%;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Nunito;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.ingredient-wrapper {
+    max-width: 1280px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.food-result {
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    .search-box {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner-area h2 {
+        padding-top: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    food-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    food-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
